@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as exampleAction  from './actions/actions.js';
-import Test from '././test/Test.js'
+import * as exampleAction  from '../actions/actions.js';
 
-class App extends Component {
+
+class Test extends Component {
 
   render() {
       return (
           <div>
-              <h1>Hello world, this is a Redux tutorial!</h1>
+              <h1>This is in the Test.js!</h1>
               <p>Here is our property: {this.props.examplePropOne}</p>
-              <Test/>
           </div>
           )
   }
@@ -32,6 +31,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 
 }
-export default connect(mapStateToProps, mapDispatchToProps) (App);
+export default connect(mapStateToProps, mapDispatchToProps) (Test);
 
 
