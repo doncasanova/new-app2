@@ -4,6 +4,7 @@ console.log("in action")
 
 
 export const exampleAction = () => (
+
     {
     type: 'EXAMPLE'
 }
@@ -15,4 +16,4 @@ export const exampleActionTwo = (sampleData) => (
         payload: sampleData
     }
     
-    )
+)

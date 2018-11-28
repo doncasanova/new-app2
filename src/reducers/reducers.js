@@ -1,6 +1,7 @@
 let defaultState = {
     examplePropOne: 'example',
-    examplePropTwo: 'test'
+    examplePropTwo: 'test',
+    examplePropThree: 'test1'
 };
 console.log ('in the reducers')
 const reducers = (state = defaultState, action) => {
@@ -11,7 +12,7 @@ const reducers = (state = defaultState, action) => {
         case "EXAMPLE":
             return {
                 ...state, 
-                examplePropOne: 'newPropOne'
+                examplePropOne: "newPropOne"
             }
         case 'EXAMPLE-TWO':
             return {

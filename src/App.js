@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { exampleAction } from './actions/actions.js';
+import * as exampleAction  from './actions/actions.js';
 
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-           
-        }
-        console.log(mapDispatchToProps)
-    }
 
   render() {
       return (
@@ -20,20 +13,24 @@ class App extends Component {
               <p>Here is our property: {this.props.examplePropOne}</p>
           </div>
           )
-      
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
+    console.log(ownProps);
     
     return {
-        examplePropOne: state.examplePropOne,
-        examplePropTwo: state.examplePropTwo,
+        examplePropOne: state.state.examplePropOne,
+        examplePropTwo: state.state.examplePropTwo,
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
+    console.log(ownProps);
     return bindActionCreators({ exampleAction }, dispatch);
-}
 
+
+}
 export default connect(mapStateToProps, mapDispatchToProps) (App);
+
+
