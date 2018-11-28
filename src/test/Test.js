@@ -5,7 +5,7 @@ import * as exampleAction  from '../actions/actions.js';
 
 
 class Test extends Component {
-
+    
   render() {
       return (
           <div>

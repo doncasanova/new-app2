@@ -10,6 +10,7 @@ const reducers = (state = defaultState, action) => {
     switch (action.type) {
         
         case "EXAMPLE":
+            alert ("help")
             return {
                 ...state, 
                 examplePropOne: "newPropOne"

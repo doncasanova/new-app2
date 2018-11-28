@@ -5,8 +5,9 @@
     "\\src",
     "\\src\\actions",
     "\\src\\reducers",
-    "\\src\\store"
+    "\\src\\store",
+    "\\src\\test"
   ],
-  "SelectedNode": "\\src\\reducers\\reducers.js",
+  "SelectedNode": "\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }
